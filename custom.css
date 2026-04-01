@@ -1,0 +1,44 @@
+/* Match mira.day text colors and styling */
+
+/* Light mode */
+:root {
+  --text-primary: #1e1e1e;
+  --text-secondary: #52525c;
+  --border-color: #e4e4e7;
+}
+
+/* Dark mode */
+.dark, [data-theme="dark"] {
+  --text-primary: #e5e5e5;
+  --text-secondary: #9f9fa9;
+  --border-color: #404040;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --text-primary: #e5e5e5;
+    --text-secondary: #9f9fa9;
+    --border-color: #404040;
+  }
+}
+
+/* Body text */
+body {
+  color: var(--text-primary);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+/* Paragraphs and secondary text */
+p, li, td {
+  color: var(--text-secondary);
+}
+
+/* Navbar */
+#navbar {
+  backdrop-filter: blur(12px);
+}
