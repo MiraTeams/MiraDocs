@@ -38,6 +38,31 @@ p, li, td {
   color: var(--text-secondary);
 }
 
+/* Sidebar active item — match mira.day neutral style instead of blue */
+.text-primary {
+  color: var(--text-primary) !important;
+}
+
+[class*="text-primary"]:not(button):not(.btn) {
+  color: var(--text-primary) !important;
+}
+
+/* Sidebar active border — neutral instead of blue */
+.border-primary {
+  border-color: var(--text-primary) !important;
+}
+
+.dark .border-primary-light,
+[data-theme="dark"] .border-primary-light {
+  border-color: #e5e5e5 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .border-primary-light {
+    border-color: #e5e5e5 !important;
+  }
+}
+
 /* Navbar */
 #navbar {
   backdrop-filter: blur(12px);
