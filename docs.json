@@ -1,68 +1,140 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Mira Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#4f6bff",
+    "light": "#6B82FF",
+    "dark": "#3A51CC",
+    "background": {
+      "light": "#ffffff",
+      "dark": "#1e1e1e"
+    }
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Guides",
-        "groups": [
+        "language": "en",
+        "default": true,
+        "tabs": [
           {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
+            "tab": "Guides",
+            "groups": [
+              {
+                "group": "Getting started",
+                "pages": [
+                  "index",
+                  "quickstart",
+                  "development"
+                ]
+              },
+              {
+                "group": "Customization",
+                "pages": [
+                  "essentials/settings",
+                  "essentials/navigation"
+                ]
+              },
+              {
+                "group": "Writing content",
+                "pages": [
+                  "essentials/markdown",
+                  "essentials/code",
+                  "essentials/images",
+                  "essentials/reusable-snippets"
+                ]
+              },
+              {
+                "group": "AI tools",
+                "pages": [
+                  "ai-tools/cursor",
+                  "ai-tools/claude-code",
+                  "ai-tools/windsurf"
+                ]
+              }
             ]
           },
           {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+            "tab": "API reference",
+            "groups": [
+              {
+                "group": "API documentation",
+                "pages": [
+                  "api-reference/introduction"
+                ]
+              },
+              {
+                "group": "Endpoint examples",
+                "pages": [
+                  "api-reference/endpoint/get",
+                  "api-reference/endpoint/create",
+                  "api-reference/endpoint/delete",
+                  "api-reference/endpoint/webhook"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
-        "groups": [
+        "language": "zh",
+        "tabs": [
           {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+            "tab": "指南",
+            "groups": [
+              {
+                "group": "开始使用",
+                "pages": [
+                  "zh/index",
+                  "zh/quickstart",
+                  "zh/development"
+                ]
+              },
+              {
+                "group": "自定义",
+                "pages": [
+                  "zh/essentials/settings",
+                  "zh/essentials/navigation"
+                ]
+              },
+              {
+                "group": "编写内容",
+                "pages": [
+                  "zh/essentials/markdown",
+                  "zh/essentials/code",
+                  "zh/essentials/images",
+                  "zh/essentials/reusable-snippets"
+                ]
+              },
+              {
+                "group": "AI 工具",
+                "pages": [
+                  "zh/ai-tools/cursor",
+                  "zh/ai-tools/claude-code",
+                  "zh/ai-tools/windsurf"
+                ]
+              }
             ]
           },
           {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+            "tab": "API 参考",
+            "groups": [
+              {
+                "group": "API 文档",
+                "pages": [
+                  "zh/api-reference/introduction"
+                ]
+              },
+              {
+                "group": "接口示例",
+                "pages": [
+                  "zh/api-reference/endpoint/get",
+                  "zh/api-reference/endpoint/create",
+                  "zh/api-reference/endpoint/delete",
+                  "zh/api-reference/endpoint/webhook"
+                ]
+              }
             ]
           }
         ]
@@ -72,12 +144,12 @@
       "anchors": [
         {
           "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "href": "https://docs.mira.day",
           "icon": "book-open-cover"
         },
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://mira.day/blog",
           "icon": "newspaper"
         }
       ]
@@ -91,32 +163,32 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@mira.day"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://mira.day"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/maboroshitech",
+      "github": "https://github.com/MiraTeams",
+      "linkedin": "https://linkedin.com/company/mira"
     }
   }
 }

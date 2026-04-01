@@ -1,0 +1,35 @@
+---
+title: '代码块'
+description: '显示内联代码和代码块'
+icon: 'code'
+---
+
+## 内联代码
+
+要将一个 `词` 或 `短语` 标记为代码，用反引号 (`) 将其括起来。
+
+```
+要将一个 `词` 或 `短语` 标记为代码，用反引号 (`) 将其括起来。
+```
+
+## 代码块
+
+使用[围栏代码块](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks)，用三个反引号包围代码，并在开头的反引号后写上编程语言名称以获得语法高亮。你还可以在语言名称后写上代码文件名。
+
+```java HelloWorld.java
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+````md
+```java HelloWorld.java
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+````
