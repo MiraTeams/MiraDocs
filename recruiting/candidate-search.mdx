@@ -1,0 +1,80 @@
+---
+title: "Candidate search"
+description: "How Mira finds and aggregates candidate data"
+icon: "magnifying-glass"
+---
+
+## How search works
+
+When you describe a role, Mira translates your requirements into targeted searches across multiple data sources. The search process involves two key steps:
+
+### 1. People Search
+
+Mira generates optimized search queries from your description and runs them against its data sources. For example, a request for "reinforcement learning engineer with LLM experience" produces queries like:
+
+```
+reinforcement learning engineer large language model RLHF
+trillion parameter model deep reinforcement learning algorithms
+PyTorch Transformers Megatron-LM multi-agent interaction distributed training
+```
+
+### 2. People Data Generation
+
+Search results are aggregated into structured candidate profiles containing:
+- Name, current role, and organization
+- Educational background
+- Work history and key achievements
+- Skills and expertise areas
+- Relevance analysis against your requirements
+
+Results are delivered as downloadable data files (JSON format), typically containing 30 candidates per search.
+
+## Writing effective search queries
+
+<Tabs>
+  <Tab title="Good examples">
+    ```
+    Senior full-stack engineer with React and Node.js experience,
+    based in Berlin or open to remote work, ideally from a fast-growing startup.
+    ```
+
+    ```
+    AI/ML lead with LLM fine-tuning experience, ideally from a top lab
+    or a well-funded AI startup.
+    ```
+
+    ```
+    Head of Engineering to build out our platform team.
+    Someone who's scaled a team from 5 to 30 in a fast-paced environment.
+    ```
+  </Tab>
+  <Tab title="Tips">
+    - **Be specific about skills** — List must-have technical skills and tools
+    - **Include location preferences** — City, region, or remote-friendly
+    - **Specify seniority** — Junior, senior, lead, director, VP
+    - **Add context** — Industry, company stage, team size
+    - **Mention nice-to-haves** — Published papers, specific company backgrounds, language skills
+  </Tab>
+</Tabs>
+
+## Refining results
+
+After the initial search, continue the conversation to narrow results:
+
+| Refinement | Example |
+| --- | --- |
+| Filter by criteria | "Show me only candidates with published papers" |
+| Change priority | "Prioritize candidates with startup experience" |
+| Expand search | "Also look for candidates in the Bay Area" |
+| Deep dive | "Tell me more about the top 3 candidates" |
+| Prioritize | "Which of these should I reach out to first?" |
+
+Mira retains full context within the task, so each refinement builds on previous results.
+
+## Exporting results
+
+Candidate data can be exported in multiple ways:
+- **Download file** — Click the download button on any generated data file
+- **Copy table** — Copy structured comparison tables to clipboard
+- **Download table** — Export tables as files
+- **View all files** — Access all generated files within a task

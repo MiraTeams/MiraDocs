@@ -1,0 +1,80 @@
+---
+title: "候选人搜索"
+description: "Mira 如何查找和汇总候选人数据"
+icon: "magnifying-glass"
+---
+
+## 搜索原理
+
+当你描述一个职位时，Mira 会将你的需求转化为跨多个数据源的定向搜索。搜索过程包含两个关键步骤：
+
+### 1. 人才搜索
+
+Mira 根据你的描述生成优化的搜索查询并执行。例如，搜索"具有 LLM 经验的强化学习工程师"会生成如下查询：
+
+```
+reinforcement learning engineer large language model RLHF
+trillion parameter model deep reinforcement learning algorithms
+PyTorch Transformers Megatron-LM multi-agent interaction distributed training
+```
+
+### 2. 人才数据生成
+
+搜索结果被汇总为结构化的候选人档案，包含：
+- 姓名、当前职位和所在组织
+- 教育背景
+- 工作经历和主要成就
+- 技能和专业领域
+- 与你需求的相关性分析
+
+结果以可下载的数据文件（JSON 格式）交付，每次搜索通常包含 30 位候选人。
+
+## 编写有效的搜索查询
+
+<Tabs>
+  <Tab title="好的示例">
+    ```
+    Senior full-stack engineer with React and Node.js experience,
+    based in Berlin or open to remote work, ideally from a fast-growing startup.
+    ```
+
+    ```
+    AI/ML lead with LLM fine-tuning experience, ideally from a top lab
+    or a well-funded AI startup.
+    ```
+
+    ```
+    Head of Engineering to build out our platform team.
+    Someone who's scaled a team from 5 to 30 in a fast-paced environment.
+    ```
+  </Tab>
+  <Tab title="技巧">
+    - **明确技能要求** — 列出必备的技术技能和工具
+    - **包含地点偏好** — 城市、地区或是否接受远程
+    - **指定资历级别** — 初级、高级、主管、总监、副总裁
+    - **添加背景信息** — 行业、公司阶段、团队规模
+    - **提及加分项** — 发表过论文、特定公司背景、语言能力
+  </Tab>
+</Tabs>
+
+## 优化结果
+
+初次搜索后，你可以继续对话来缩小结果范围：
+
+| 优化方式 | 示例 |
+| --- | --- |
+| 按条件筛选 | "仅显示有发表论文的候选人" |
+| 更改优先级 | "优先考虑有创业公司经验的候选人" |
+| 扩展搜索 | "也看看湾区的候选人" |
+| 深入了解 | "详细介绍排名前 3 的候选人" |
+| 排序优先 | "我应该先联系哪些人？" |
+
+Mira 在任务中会保持完整的上下文，每次优化都基于之前的结果。
+
+## 导出结果
+
+候选人数据可通过多种方式导出：
+- **下载文件** — 点击任意数据文件上的下载按钮
+- **复制表格** — 将结构化对比表格复制到剪贴板
+- **下载表格** — 将表格导出为文件
+- **查看所有文件** — 访问任务中生成的所有文件

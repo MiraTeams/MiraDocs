@@ -17,124 +17,82 @@
       {
         "language": "en",
         "default": true,
-        "tabs": [
+        "groups": [
           {
-            "tab": "Guides",
-            "groups": [
-              {
-                "group": "Getting started",
-                "pages": [
-                  "index",
-                  "quickstart",
-                  "development"
-                ]
-              },
-              {
-                "group": "Customization",
-                "pages": [
-                  "essentials/settings",
-                  "essentials/navigation"
-                ]
-              },
-              {
-                "group": "Writing content",
-                "pages": [
-                  "essentials/markdown",
-                  "essentials/code",
-                  "essentials/images",
-                  "essentials/reusable-snippets"
-                ]
-              },
-              {
-                "group": "AI tools",
-                "pages": [
-                  "ai-tools/cursor",
-                  "ai-tools/claude-code",
-                  "ai-tools/windsurf"
-                ]
-              }
+            "group": "Getting started",
+            "pages": [
+              "getting-started/quickstart",
+              "getting-started/account-setup"
             ]
           },
           {
-            "tab": "API reference",
-            "groups": [
-              {
-                "group": "API documentation",
-                "pages": [
-                  "api-reference/introduction"
-                ]
-              },
-              {
-                "group": "Endpoint examples",
-                "pages": [
-                  "api-reference/endpoint/get",
-                  "api-reference/endpoint/create",
-                  "api-reference/endpoint/delete",
-                  "api-reference/endpoint/webhook"
-                ]
-              }
+            "group": "Concepts",
+            "pages": [
+              "concepts/how-mira-works",
+              "concepts/tasks",
+              "concepts/skills"
+            ]
+          },
+          {
+            "group": "Recruiting",
+            "pages": [
+              "recruiting/candidate-search",
+              "recruiting/evaluation",
+              "recruiting/communication"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/overview",
+              "integrations/chrome-extension"
+            ]
+          },
+          {
+            "group": "Security",
+            "pages": [
+              "security/overview"
             ]
           }
         ]
       },
       {
         "language": "zh",
-        "tabs": [
+        "groups": [
           {
-            "tab": "指南",
-            "groups": [
-              {
-                "group": "开始使用",
-                "pages": [
-                  "zh/index",
-                  "zh/quickstart",
-                  "zh/development"
-                ]
-              },
-              {
-                "group": "自定义",
-                "pages": [
-                  "zh/essentials/settings",
-                  "zh/essentials/navigation"
-                ]
-              },
-              {
-                "group": "编写内容",
-                "pages": [
-                  "zh/essentials/markdown",
-                  "zh/essentials/code",
-                  "zh/essentials/images",
-                  "zh/essentials/reusable-snippets"
-                ]
-              },
-              {
-                "group": "AI 工具",
-                "pages": [
-                  "zh/ai-tools/cursor",
-                  "zh/ai-tools/claude-code",
-                  "zh/ai-tools/windsurf"
-                ]
-              }
+            "group": "开始使用",
+            "pages": [
+              "zh/getting-started/quickstart",
+              "zh/getting-started/account-setup"
             ]
           },
           {
-            "tab": "API 参考",
-            "groups": [
-              {
-                "group": "API 文档",
-                "pages": [
-                  "zh/api-reference/introduction"
-                ]
-              },
-              {
-                "group": "接口示例",
-                "pages": [
-                  "zh/api-reference/endpoint/get",
-                  "zh/api-reference/endpoint/create",
-                  "zh/api-reference/endpoint/delete",
-                  "zh/api-reference/endpoint/webhook"
-                ]
-              }
+            "group": "核心概念",
+            "pages": [
+              "zh/concepts/how-mira-works",
+              "zh/concepts/tasks",
+              "zh/concepts/skills"
+            ]
+          },
+          {
+            "group": "招聘功能",
+            "pages": [
+              "zh/recruiting/candidate-search",
+              "zh/recruiting/evaluation",
+              "zh/recruiting/communication"
+            ]
+          },
+          {
+            "group": "集成",
+            "pages": [
+              "zh/integrations/overview",
+              "zh/integrations/chrome-extension"
+            ]
+          },
+          {
+            "group": "安全与合规",
+            "pages": [
+              "zh/security/overview"
             ]
           }
         ]
@@ -146,11 +104,6 @@
           "anchor": "Documentation",
           "href": "https://docs.mira.day",
           "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mira.day/blog",
-          "icon": "newspaper"
         }
       ]
     }
@@ -168,21 +121,9 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://mira.day"
+      "label": "Get Started",
+      "href": "https://mira.day/task"
     }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
   },
   "footer": {
     "socials": {
